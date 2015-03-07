@@ -5,8 +5,13 @@ public class Cadastro {
 
 	ArrayList<Paciente> pacientes;
 	ArrayList<Medicamento> medicamentos;
+	
 	Paciente paciente;
 	Medicamento medicamento;
+	cadPaciente cadPac = new cadPaciente();
+	cadMedicamento cadMed = new cadMedicamento();
+	listaPaciente listPac = new listaPaciente();
+	
 	Scanner ler = new Scanner(System.in);
 
 	int option=-1;
@@ -18,17 +23,22 @@ public class Cadastro {
 			
 			System.out.println("1 - Paciente");
 			System.out.println("2 - Medicamento");
+			System.out.println("3 - Listar Paciente");
 			System.out.println("0 - Sair");
 			option = ler.nextInt();
 
 			switch(option){
 			
 				case 1:{
-					cadastraPaciente();
+					cadPac.cadastraPaciente();
 					break;
 				}
 				case 2:{
-					cadastraMedicamento();
+					cadMed.cadastraMedicamento();
+					break;
+				}
+				case 3:{
+					listPac.listarPacientes();
 					break;
 				}
 				case 0:{
@@ -42,47 +52,8 @@ public class Cadastro {
 
 	}
 
-	public void cadastraPaciente(){
-
-		Paciente paciente = new Paciente();
-		
-		//pacientes = new ArrayList<Paciente>();
-
-		System.out.println("### PACIENTE ###");
-		System.out.println("");
-		System.out.println("Nome: ");
-		paciente.setNome(ler.next());
-		System.out.println("CPF: ");
-		paciente.setCpf(ler.next());
-		System.out.println("Sexo: ");
-		paciente.setSexo(ler.next());
-		System.out.println("Data de Nascimento: ");
-		paciente.setDataNascimento(ler.next());
-
-		pacientes.add(paciente);
-		
-	}
-
-	public void cadastraMedicamento() {
-
-		Medicamento medicamento = new Medicamento();
-
-		//medicamentos = new ArrayList<Medicamento>();
-		
-		System.out.println("### MEDICAMENTO ###");
-		System.out.println("");
-		System.out.println("Cod Medicamento: ");
-		medicamento.setCod(ler.next());
-		System.out.println("Nome: ");
-		medicamento.setNomeComercial(ler.next());
-		System.out.println("Concentração: ");
-		medicamento.setConcentracao(ler.next());
-		System.out.println("Tipo: ");
-		medicamento.setTipo(ler.next());
-
-		medicamentos.add(medicamento);
-		
-	}
+	
+	
 	
 	public void listarPacientes(){
 		

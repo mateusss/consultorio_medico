@@ -1,9 +1,12 @@
+
+
 public class Medicamento {
 	
 	private String cod;
 	private String nomeComercial;
 	private String concentracao;
 	private String tipo;
+	
 	
 	public String getCod() {
 		return cod;
