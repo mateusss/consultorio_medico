@@ -1,10 +1,6 @@
 
-import java.util.Scanner;
-
 
 public class cadPaciente{
-
-		Scanner ler = new Scanner(System.in);
 		
 	public Paciente cadastraPaciente(){
 

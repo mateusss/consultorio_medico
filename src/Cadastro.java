@@ -3,11 +3,9 @@ import java.util.Scanner;
 
 public class Cadastro {
 
-	ArrayList<Paciente> pacientes;
-	ArrayList<Medicamento> medicamentos;
+	ArrayList<Paciente> pacientes = new ArrayList<Paciente>();
+	ArrayList<Medicamento> medicamentos = new ArrayList<Medicamento>();
 
-	Paciente paciente;
-	Medicamento medicamento;
 	cadPaciente cadPac;
 	cadMedicamento cadMed;
 
@@ -31,13 +29,11 @@ public class Cadastro {
 			
 				case 1:{
                     cadPac = new cadPaciente();
-                    pacientes = new ArrayList<Paciente>();
                     pacientes.add(cadPac.cadastraPaciente());
 					break;
 				}
 				case 2:{
                     cadMed = new cadMedicamento();
-                    medicamentos = new ArrayList<Medicamento>();
 					medicamentos.add(cadMed.cadastraMedicamento());
 					break;
 				}
