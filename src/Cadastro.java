@@ -50,14 +50,12 @@ public class Cadastro {
 					break;
 				}
 				default:
-					System.out.println("Op��o Inv�lida!!");
+					System.out.println("Opção Invalida!!");
 			}		
 		} while (option != 0);
 
 	}
 
-	
-	
 	
 	public void listarPacientes(){
 
