@@ -39,7 +39,7 @@ public class Cadastro {
 				}
 				case 3:{
                     listarPacientes();
-                    System.out.println("\n\n");
+                    System.out.println("\n");
                     break;
 				}
 				case 0:{
