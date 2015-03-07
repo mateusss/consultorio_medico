@@ -12,14 +12,10 @@ public class cadPaciente{
 
 		System.out.println("### PACIENTE ###");
 		System.out.println("");
-		System.out.println("Nome: ");
-		    paciente.setNome(ler.next());
-		System.out.println("CPF: ");
-		    paciente.setCpf(ler.next());
-		System.out.println("Sexo: ");
-		    paciente.setSexo(ler.next());
-		System.out.println("Data de Nascimento: ");
-		    paciente.setDataNascimento(ler.next());
+		    paciente.setNome(Console.lerString("Nome: "));
+		    paciente.setCpf(Console.lerString("CPF: "));
+		    paciente.setSexo(Console.lerString("Sexo: "));
+		    paciente.setDataNascimento(Console.lerString("Data Nascimento: "));
 
 		return paciente;
 	}
