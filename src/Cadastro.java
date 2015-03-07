@@ -25,7 +25,7 @@ public class Cadastro {
 			System.out.println("2 - Medicamento");
 			System.out.println("3 - Listar Paciente");
 			System.out.println("0 - Sair");
-			option = ler.nextInt();
+			option = Console.lerInt("Digite sua opção: ");
 
 			switch(option){
 			
@@ -43,7 +43,8 @@ public class Cadastro {
 				}
 				case 3:{
                     listarPacientes();
-					break;
+                    System.out.println("\n\n");
+                    break;
 				}
 				case 0:{
 					System.out.println("Saindo...");
@@ -58,8 +59,6 @@ public class Cadastro {
 
 	
 	public void listarPacientes(){
-
-        paciente = new Paciente();
 
         System.out.println("Lista de pacientes cadastrados:\n");
 
