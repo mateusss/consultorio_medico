@@ -7,7 +7,14 @@ public class cadPaciente{
     private String sexo;
     private String dataNascimento;
 
-	public Paciente cadastraPaciente(){
+    public cadPaciente(String nome, String cpf, String sexo, String dataNascimento) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.sexo = sexo;
+        this.dataNascimento = dataNascimento;
+    }
+
+    public Paciente cadastraPaciente(){
 
 
 		Paciente paciente = new Paciente(nome, cpf, sexo, dataNascimento);

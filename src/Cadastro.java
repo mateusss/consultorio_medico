@@ -16,7 +16,12 @@ public class Cadastro {
 
 	cadPaciente cadPac;
 	cadMedicamento cadMed;
-	int option = -1;
+	private int option = -1;
+    private String nome;
+    private String cpf;
+    private String sexo;
+    private String dataNascimento;
+
 
 	public void menuDeCadastros() {
 
@@ -32,7 +37,7 @@ public class Cadastro {
 			switch(option){
 			
 				case 1:{
-                    cadPac = new cadPaciente();
+                    cadPac = new cadPaciente(nome, cpf, sexo, dataNascimento);
                     pacientes.add(cadPac.cadastraPaciente());
 					break;
 				}
