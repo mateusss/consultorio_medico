@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class cadMedicamento extends Medicamento {
-	
+public class CadMedicamento extends Medicamento {
+
 	Scanner ler = new Scanner(System.in);
 	ArrayList<Medicamento> medicamentos;
 	Medicamento medicamento;

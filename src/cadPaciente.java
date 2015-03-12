@@ -1,13 +1,13 @@
 
 
-public class cadPaciente{
+public class CadPaciente {
 
     private String nome;
     private String cpf;
     private String sexo;
     private String dataNascimento;
 
-    public cadPaciente(String nome, String cpf, String sexo, String dataNascimento) {
+    public CadPaciente(String nome, String cpf, String sexo, String dataNascimento) {
         this.nome = nome;
         this.cpf = cpf;
         this.sexo = sexo;

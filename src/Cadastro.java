@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 /**
  * Classe responsavel por conter a lista de cadastros realizados de Cliente e Medicamento
@@ -14,8 +13,8 @@ public class Cadastro {
 	ArrayList<Medicamento> medicamentos = new ArrayList<Medicamento>();
    // Scanner ler = new Scanner(System.in);
 
-	cadPaciente cadPac;
-	cadMedicamento cadMed;
+	CadPaciente cadPac;
+	CadMedicamento cadMed;
 	private int option = -1;
     private String nome;
     private String cpf;
@@ -37,12 +36,12 @@ public class Cadastro {
 			switch(option){
 			
 				case 1:{
-                    cadPac = new cadPaciente(nome, cpf, sexo, dataNascimento);
+                    cadPac = new CadPaciente(nome, cpf, sexo, dataNascimento);
                     pacientes.add(cadPac.cadastraPaciente());
 					break;
 				}
 				case 2:{
-                    cadMed = new cadMedicamento();
+                    cadMed = new CadMedicamento();
 					medicamentos.add(cadMed.cadastraMedicamento());
 					break;
 				}
