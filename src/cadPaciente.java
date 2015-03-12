@@ -1,5 +1,9 @@
-
-
+/**
+ * Classe responsavel por gerar o cadastro de pacientes
+ * possui um metodo cadastraPaciente
+ *
+ *
+ */
 public class CadPaciente {
 
     private String nome;
@@ -7,6 +11,14 @@ public class CadPaciente {
     private String sexo;
     private String dataNascimento;
 
+    /**
+     * Metodo contrutor da classe CadPaciente
+     *
+     * @param nome Nome do paciente
+     * @param cpf Cpf do paciente
+     * @param sexo Sexo do paciente
+     * @param dataNascimento Data de nascimento do paciente
+     */
     public CadPaciente(String nome, String cpf, String sexo, String dataNascimento) {
         this.nome = nome;
         this.cpf = cpf;
@@ -14,6 +26,11 @@ public class CadPaciente {
         this.dataNascimento = dataNascimento;
     }
 
+    /**
+     * Metodo resonsavel por criar um novo paciente e efetuar o cadastro
+     *
+     * @return paciente 
+     */
     public Paciente cadastraPaciente(){
 
 
