@@ -1,10 +1,16 @@
 
 
 public class cadPaciente{
-		
+
+    private String nome;
+    private String cpf;
+    private String sexo;
+    private String dataNascimento;
+
 	public Paciente cadastraPaciente(){
 
-		Paciente paciente = new Paciente();
+
+		Paciente paciente = new Paciente(nome, cpf, sexo, dataNascimento);
 
 		System.out.println("### PACIENTE ###");
 		System.out.println("");

@@ -1,18 +1,22 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Classe responsavel por conter a lista de cadastros realizados de Cliente e Medicamento
+ * a classe também contem a estrutura do formulario de cadastro
+ *
+ * @author Marcus Rodrigues
+ *
+ */
 public class Cadastro {
 
 	ArrayList<Paciente> pacientes = new ArrayList<Paciente>();
 	ArrayList<Medicamento> medicamentos = new ArrayList<Medicamento>();
+   // Scanner ler = new Scanner(System.in);
 
 	cadPaciente cadPac;
 	cadMedicamento cadMed;
-
-	
-	Scanner ler = new Scanner(System.in);
-
-	int option=-1;
+	int option = -1;
 
 	public void menuDeCadastros() {
 

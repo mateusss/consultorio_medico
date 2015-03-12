@@ -6,31 +6,36 @@ public class Paciente {
 	private String cpf;
 	private String sexo;
 	private String dataNascimento;
-	
-	
-	
-	public final String getNome() {
+
+    public Paciente(String nome, String cpf, String sexo, String dataNascimento) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.sexo = sexo;
+        this.dataNascimento = dataNascimento;
+    }
+
+    public  String getNome() {
 		return nome;
 	}
-	public final void setNome(String nome) {
+	public  void setNome(String nome) {
 		this.nome = nome;
 	}
-	public final String getCpf() {
+	public  String getCpf() {
 		return cpf;
 	}
-	public final void setCpf(String cpf) {
+	public  void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	public final String getSexo() {
+	public  String getSexo() {
 		return sexo;
 	}
-	public final void setSexo(String sexo) {
+	public  void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
-	public final String getDataNascimento() {
+	public  String getDataNascimento() {
 		return dataNascimento;
 	}
-	public final void setDataNascimento(String dataNascimento) {
+	public  void setDataNascimento(String dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 	
